@@ -8,7 +8,7 @@ const express = require("express");
 const app = express();
 
 // Sets an initial port. We"ll use this later in our listener
-const PORT = process.env.PORT || 3002;
+const PORT = process.env.PORT || 8000;
 
 // MIDDLEWARE
 // Sets up the Express app to handle data parsing for POST and PUT requests, because in both these requests you are sending data to the server and you are asking the server to accept or store that data.
