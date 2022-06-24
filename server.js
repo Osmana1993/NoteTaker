@@ -8,7 +8,7 @@ const express = require("express");
 const app = express();
 
 // Sets an initial port. We"ll use this later in our listener
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || 8070;
 
 // MIDDLEWARE
 // Sets up the Express app to handle data parsing for POST and PUT requests, because in both these requests you are sending data to the server and you are asking the server to accept or store that data.
@@ -20,8 +20,8 @@ app.use(express.static("public"));
 
 // ROUTER
 // The below points our server to a series of "route" files.
-require("./routes/api.routes")(app);
-require("./routes/html.routes")(app);
+require("./routes/api.routes.js")(app);
+require("./routes/html.routes.js")(app);
 // These routes give our server a "map" of how to respond when users visit or request data from various URLs.
 
 // LISTENER
